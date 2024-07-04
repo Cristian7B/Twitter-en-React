@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+    background: #222;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardFollow {
+    display: flex;
+    align-items: center;
+    /* width: 320px; */
+    justify-content: flex-end;
+    font-size: .8rem;
+    gap: 10px;
+}
+
+.headerCard {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 10px;
+    color: #fff;
+}
+
+.infoUserName{
+    opacity: 0.6;
+    line-height: 0px;
+    margin-block-start: 0.6em;
+}
+
+.avatarUser {
+    width: 48px;
+    border-radius: 1000px;
+}
+
+.btnToggleFollow {
+    cursor: pointer;
+    margin-left: 5px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: 700;
+    border: 1px solid #000;
+    transition: .3s ease all;
+}
+
+.btnToggleFollow.isFollowing {
+    color: #fff;
+    border: 1px solid #bbb;
+    background-color: transparent;
+    transition: none;
+    width: 140px;
+}
+
+.btnToggleFollow.isFollowing:hover {
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.199);
+    color: red;
+    opacity: .8;
+}
+
+.btnText {
+    display: block;
+}
+
+.btnToggleFollow-unfollow {
+    display: none;
+}
+
+.btnToggleFollow.isFollowing:hover .btnToggleFollow-unfollow {
+    display: block;
+}
+
+.btnToggleFollow.isFollowing:hover .btnText{
+    display: none;
+}
+
+.btnToggleFollow:hover {
+    opacity: .8;
+}
